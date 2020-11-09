@@ -604,12 +604,12 @@ a {
 }
 
 .services_basis__blocks__row1__biggerimage::before {
-   background: url(/img/services/rectangle_44_copy_3_19311.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_3_19311.png) no-repeat;
    background-size: cover;
 }
 
 .services_basis__blocks__row1__littleimage::before {
-   background: url(/img/services/rectangle_44_copy_5_19074.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19074.png) no-repeat;
    background-size: cover;
 }
 
@@ -623,13 +623,13 @@ a {
 }
 
 .services_basis__blocks__row2__biggerimage::before {
-   background: url(/img/services/rectangle_44_copy_3_19104.png) no-repeat;
+   background: url(.../img/services/rectangle_44_copy_3_19104.png) no-repeat;
    background-size: cover;
    
 }
 
 .services_basis__blocks__row2__littleimage::before {
-   background: url(/img/services/rectangle_44_copy_5_19301.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19301.png) no-repeat;
    background-size: cover;
 }
 
@@ -641,12 +641,12 @@ a {
 }
 
 .services_basis__blocks__row3__littleimage::before {
-   background: url(/img/services/rectangle_44_copy_5_19326.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19326.png) no-repeat;
    background-size: cover;
 }
 
 .services_basis__blocks__row3__biggerimage::before {
-   background: url(/img/services/rectangle_44_copy_4_19089.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_4_19089.png) no-repeat;
    background-size: cover;
 }
 
@@ -786,32 +786,32 @@ a {
 /*стили изображений, БЭКГРАУНД*/
 
 .team_basis__row__item__photo1 {
-   background: url(/img/people/rectangle_40_19149.png) no-repeat;
+   background: url(../img/people/rectangle_40_19149.png) no-repeat;
    background-size: cover;
 }
 
 .team_basis__row__item__photo2 {
-   background: url(/img/people/rectangle_40_copy_5_20082.png) no-repeat;
+   background: url(../img/people/rectangle_40_copy_5_20082.png) no-repeat;
    background-size: cover;
 }
 
 .team_basis__row__item__photo3 {
-   background: url(/img/people/rectangle_40_copy_6_20083.png) no-repeat;
+   background: url(../img/people/rectangle_40_copy_6_20083.png) no-repeat;
    background-size: cover;
 }
 
 .team_basis__row__item__photo4 {
-   background: url(/img/people/rectangle_40_copy_7_20084.png) no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20084.png) no-repeat;
    background-size: cover;
 }
 
 .team_basis__row__item__photo5 {
-   background: url(/img/people/rectangle_40_copy_7_20085.png) no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20085.png) no-repeat;
    background-size: cover;
 }
 
 .team_basis__row__item__photo6 {
-   background: url(/img/people/rectangle_40_copy_7_20086.png) no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20086.png) no-repeat;
    background-size: cover;
 }
 
