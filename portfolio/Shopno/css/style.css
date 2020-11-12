@@ -623,7 +623,7 @@ a {
 }
 
 .services_basis__blocks__row2__biggerimage::before {
-   background: url(.../img/services/rectangle_44_copy_3_19104.png) no-repeat;
+   background: url(../img/services/rectangle_44_copy_3_19104.png) no-repeat;
    background-size: cover;
    
 }
