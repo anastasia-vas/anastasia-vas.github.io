@@ -4,22 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name='freelancehunt' content='accf452c874497a' />
    <link rel="stylesheet" href="css/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
    <title>Резюме</title>
 </head>
 
 <body>
    <div id="app">
-      <div class="menu hide">
+      <div class="menu" :class="{hide:!showMenu}">
          <div class="mobile_nav">
-            <div class="close" onclick="closeMenu()">
+            <div class="close" @click="showMenu=false">
                <img src="img/icons/cancel.svg" alt="">
             </div>
             <ul class="links">
-               <li onclick="openLink()"><a href="#">Главная</a></li>
-               <li onclick="openLink()"><a href="#technology">Технологии</a></li>
-               <li onclick="openLink()"><a href="#portfolio">Портфолио</a></li>
+               <li @click="showMenu=false"><a href="#">Главная</a></li>
+               <li @click="showMenu=false"><a href="#technology">Технологии</a></li>
+               <li @click="showMenu=false"><a href="#portfolio">Портфолио</a></li>
                <!--<li onclick="openLink()"><a href="#contacts">Контакты</a></li>-->
             </ul>
          </div>
@@ -30,7 +30,7 @@
                <div class="container">
                   <div class="intro_basis">
                      <nav class="nav">
-                        <div class="burger" onclick="openMenu()">
+                        <div class="burger" @click="showMenu=true">
                            <div class="burger__lines">
                               <div class="line"></div>
                               <div class="line"></div>
@@ -167,7 +167,7 @@
                         <div class="row">
                            <div class="item">
                               <div class="image">
-                                 <a href="https://anastasia-vas.github.io/portfolio/Shopno/"><img src="img/portfolio/mockup.jpg" alt="mockup"></a>
+                                 <a href="#"><img src="img/portfolio/mockup.jpg" alt="mockup"></a>
                               </div>
                               <div class="text">Shopno langing page</div>
                            </div>
