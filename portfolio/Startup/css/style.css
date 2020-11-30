@@ -193,7 +193,7 @@ body .content {
 }
 
 body .intro {
-  background: url(../../img/background/intro.jpg) no-repeat;
+  background: url(../img/background/intro.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -569,7 +569,7 @@ body .works .row .img9 {
 }
 
 body .banner {
-  background: url(../../img/background/rectangle_14_copy_871.jpg) no-repeat;
+  background: url(../img/background/rectangle_14_copy_871.jpg) no-repeat;
   background-size: cover;
 }
 
