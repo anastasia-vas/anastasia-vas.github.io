@@ -455,32 +455,32 @@ h2 {
 
 
 .works-basis__row__item__image1 {
-   background: url(/img/works/rectangle_2_18717.png) center no-repeat;
+   background: url(../img/works/rectangle_2_18717.png) center no-repeat;
    background-size: cover;
 }
 
 .works-basis__row__item__image2 {
-   background: url(/img/works/rectangle_2_copy_18726.png) center no-repeat;
+   background: url(../img/works/rectangle_2_copy_18726.png) center no-repeat;
    background-size: cover;
 }
 
 .works-basis__row__item__image3 {
-   background: url(/img/works/rectangle_2_copy_2_18727.png) center no-repeat;
+   background: url(../img/works/rectangle_2_copy_2_18727.png) center no-repeat;
    background-size: cover;
 }
 
 .works-basis__row__item__image4 {
-   background: url(/img/works/rectangle_2_copy_3_18728.png) center no-repeat;
+   background: url(../img/works/rectangle_2_copy_3_18728.png) center no-repeat;
    background-size: cover;
 }
 
 .works-basis__row__item__image5 {
-   background: url(/img/works/rectangle_2_copy_3_18729.png) center no-repeat;
+   background: url(../img/works/rectangle_2_copy_3_18729.png) center no-repeat;
    background-size: cover;
 }
 
 .works-basis__row__item__image6 {
-   background: url(/img/works/rectangle_2_copy_3_18730.png) center no-repeat;
+   background: url(../img/works/rectangle_2_copy_3_18730.png) center no-repeat;
    background-size: cover;
 }
 
@@ -606,13 +606,13 @@ h2 {
 /*--1 line--*/
 
 .services-basis__blocks__row1__biggerimage {
-   background: url(img/services/rectangle_44_copy_3_19311.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_3_19311.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
 }
 
 .services-basis__blocks__row1__littleimage{
-   background: url(img/services/rectangle_44_copy_5_19074.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19074.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
 }
@@ -622,14 +622,14 @@ h2 {
 /*--2 line--*/
 
 .services-basis__blocks__row2__biggerimage {
-   background: url(img/services/rectangle_44_copy_3_19104.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_3_19104.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
    
 }
 
 .services-basis__blocks__row2__littleimage {
-   background: url(img/services/rectangle_44_copy_5_19301.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19301.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
 }
@@ -638,13 +638,13 @@ h2 {
 /*--3 line--*/
 
 .services-basis__blocks__row3__littleimage {
-   background: url(img/services/rectangle_44_copy_5_19326.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_5_19326.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
 }
 
 .services-basis__blocks__row3__biggerimage {
-   background: url(img/services/rectangle_44_copy_4_19089.png) center no-repeat;
+   background: url(../img/services/rectangle_44_copy_4_19089.png) center no-repeat;
    background-size: cover;
    margin: 7px 0;
 }
@@ -809,32 +809,32 @@ h2 {
 /*background-images*/
 
 .team-basis__row__item__photo1 {
-   background: url(img/people/rectangle_40_19149.png) center no-repeat;
+   background: url(../img/people/rectangle_40_19149.png) center no-repeat;
    background-size: cover;
 }
 
 .team-basis__row__item__photo2 {
-   background: url(img/people/rectangle_40_copy_5_20082.png) center no-repeat;
+   background: url(../img/people/rectangle_40_copy_5_20082.png) center no-repeat;
    background-size: cover;
 }
 
 .team-basis__row__item__photo3 {
-   background: url(img/people/rectangle_40_copy_6_20083.png) center no-repeat;
+   background: url(../img/people/rectangle_40_copy_6_20083.png) center no-repeat;
    background-size: cover;
 }
 
 .team-basis__row__item__photo4 {
-   background: url(img/people/rectangle_40_copy_7_20084.png) center no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20084.png) center no-repeat;
    background-size: cover;
 }
 
 .team-basis__row__item__photo5 {
-   background: url(img/people/rectangle_40_copy_7_20085.png) center no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20085.png) center no-repeat;
    background-size: cover;
 }
 
 .team-basis__row__item__photo6 {
-   background: url(img/people/rectangle_40_copy_7_20086.png) center no-repeat;
+   background: url(../img/people/rectangle_40_copy_7_20086.png) center no-repeat;
    background-size: cover;
 }
 
@@ -983,7 +983,7 @@ h2 {
 .contacts {
    font-family: 'Raleway', sans-serif;
    position: relative;
-   background: url(img/background/christmas_snow_trees_wide_19660.png) center no-repeat;
+   background: url(../img/background/christmas_snow_trees_wide_19660.png) center no-repeat;
    background-size: cover;
    width: 100%;
    height: 100%;
