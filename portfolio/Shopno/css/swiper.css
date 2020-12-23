@@ -200,7 +200,7 @@
 }
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-   content: url(img/icons/feedback-arrow.svg);
+   content: url(../img/icons/feedback-arrow.svg);
    -webkit-transform: rotate(180deg);
    transform: rotate(180deg);
 }
@@ -211,7 +211,7 @@
 }
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-   content: url(img/icons/feedback-arrow.svg);
+   content: url(../img/icons/feedback-arrow.svg);
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {
