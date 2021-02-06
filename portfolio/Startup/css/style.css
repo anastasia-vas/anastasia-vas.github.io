@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*Обнуление*/
+/*clearing browser styles*/
 * {
   padding: 0;
   margin: 0;
@@ -125,7 +124,52 @@ h6 {
   }
 }
 
-body .menu {
+.info .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.info .line {
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+}
+
+.info .subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #c0301c;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.menu {
   position: fixed;
   overflow-y: scroll;
   width: 100%;
@@ -135,82 +179,40 @@ body .menu {
   padding: 3% 7%;
 }
 
-body .menu .mobile_nav .close img {
-  width: 40px;
-  height: 40px;
+.menu .mobile_nav .close {
+  margin: 0 0 15px;
 }
 
-body .menu .mobile_nav .links a {
+.menu .mobile_nav .close img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu .mobile_nav .links a {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 23px;
   line-height: 1.3;
 }
 
-body .info .title {
-  font-family: Montserrat;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #555555;
-}
-
-body .info .line {
-  width: 50px;
-  height: 2px;
-  background-color: #555555;
-}
-
-body .info .subtitle {
-  font-family: RobotoSlab;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #555555;
-}
-
-body .button {
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  padding: 10px 30px;
-  font-family: Montserrat;
-  font-size: 16px;
-  line-height: 1.3;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-body .button:hover {
-  background-color: #ffffff;
-  color: #c0301c;
-}
-
-body .content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-body .intro {
+.intro {
   background: url(../img/background/intro.jpg) no-repeat;
   background-size: cover;
 }
 
-body .intro .black-filter {
+.intro .black-filter {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-body .intro .header .icon {
-  font-family: Montserrat;
+.intro .header .icon {
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
 }
 
-body .intro .header .nav .burger .burger__lines {
+.intro .header .nav .burger .burger__lines {
   width: 50px;
   height: 50px;
   background-color: #ffffff;
@@ -221,42 +223,41 @@ body .intro .header .nav .burger .burger__lines {
           justify-content: center;
 }
 
-body .intro .header .nav .burger .burger__lines .line {
+.intro .header .nav .burger .burger__lines .line {
   height: 4px;
   width: 100%;
   background-color: #c0301c;
   margin: 2px 0;
 }
 
-body .intro .header .nav .nav-links {
+.intro .header .nav .nav-links {
   margin-bottom: 0;
 }
 
-body .intro .header .nav .nav-links a {
-  font-family: Montserrat;
+.intro .header .nav .nav-links a {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
 }
 
-body .intro .header .nav .nav-links a:hover {
+.intro .header .nav .nav-links a:hover {
   border-bottom: 2px solid #ffffff;
 }
 
 @media (max-width: 768px) {
-  body .intro .header .nav .nav-links {
+  .intro .header .nav .nav-links {
     display: none;
   }
 }
 
-body .intro .offer {
+.intro .offer {
   color: #ffffff;
 }
 
-body .intro .offer h1 {
-  font-family: Montserrat;
+.intro .offer h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   line-height: 1.2;
   font-weight: 500;
@@ -264,25 +265,25 @@ body .intro .offer h1 {
 }
 
 @media (max-width: 600px) {
-  body .intro .offer h1 {
+  .intro .offer h1 {
     font-size: 42px;
   }
 }
 
-body .intro .offer p {
-  font-family: RobotoSlab;
+.intro .offer p {
+  font-family: 'Roboto Slab', serif;
   font-size: 20px;
 }
 
-body .services .row .column:hover .img {
+.services .row .column:hover .img {
   background-color: #c0301c;
 }
 
-body .services .row .column:hover .img .services_icon {
+.services .row .column:hover .img .services_icon {
   fill: #ffffff;
 }
 
-body .services .row .column .img {
+.services .row .column .img {
   max-width: 90px;
   height: 90px;
   margin: 0 auto;
@@ -290,14 +291,14 @@ body .services .row .column .img {
   border-radius: 50%;
 }
 
-body .services .row .column .img .services_icon {
+.services .row .column .img .services_icon {
   width: 43px;
   height: 40px;
   fill: #c0301c;
 }
 
-body .services .row .column-title {
-  font-family: Montserrat;
+.services .row .column-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -305,27 +306,25 @@ body .services .row .column-title {
   color: #555555;
 }
 
-body .services .row .column-subtitle {
-  font-family: RobotoSlab;
+.services .row .column-subtitle {
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .about {
+.about {
   background-color: #f8f8f8;
 }
 
-body .about .description .text {
-  font-family: RobotoSlab;
+.about .description .text {
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .about .card-item .card__image .card__image__links {
+.about .card-item .card__image .card__image__links {
   display: none;
   background-color: rgba(85, 85, 85, 0.5);
   width: 100%;
@@ -339,27 +338,31 @@ body .about .card-item .card__image .card__image__links {
   padding: 0 0 10px 0;
 }
 
-body .about .card-item .card__image .card__image__links a {
+.about .card-item .card__image .card__image__links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 28px;
-  height: 28px;
   margin: 0 5px 0 0;
 }
 
-body .about .card-item .card__image .card__image__links a:last-child {
+.about .card-item .card__image .card__image__links a img {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+.about .card-item .card__image .card__image__links a:last-child {
   margin: 0;
 }
 
-body .about .card-item .card__image .card__image__links a:hover {
+.about .card-item .card__image .card__image__links a:hover {
   background-color: #c0301c;
 }
 
-body .about .card-item .card-1 {
+.about .card-item .card-1 {
   max-width: 100%;
   height: 220px;
   background: url(../img/people/rectangle_5_copy_312.jpg) center no-repeat;
@@ -367,13 +370,13 @@ body .about .card-item .card-1 {
 }
 
 @media (max-width: 600px) {
-  body .about .card-item .card-1 {
+  .about .card-item .card-1 {
     max-width: 60%;
     margin: 0 auto;
   }
 }
 
-body .about .card-item .card-2 {
+.about .card-item .card-2 {
   width: 100%;
   height: 220px;
   background: url(../img/people/rectangle_5_copy_332.jpg) center no-repeat;
@@ -381,13 +384,13 @@ body .about .card-item .card-2 {
 }
 
 @media (max-width: 600px) {
-  body .about .card-item .card-2 {
+  .about .card-item .card-2 {
     max-width: 60%;
     margin: 0 auto;
   }
 }
 
-body .about .card-item .card-3 {
+.about .card-item .card-3 {
   width: 100%;
   height: 220px;
   background: url(../img/people/rectangle_5_copy_342.jpg) center no-repeat;
@@ -395,13 +398,13 @@ body .about .card-item .card-3 {
 }
 
 @media (max-width: 600px) {
-  body .about .card-item .card-3 {
+  .about .card-item .card-3 {
     max-width: 60%;
     margin: 0 auto;
   }
 }
 
-body .about .card-item .card-4 {
+.about .card-item .card-4 {
   width: 100%;
   height: 220px;
   background: url(../img/people/rectangle_5_copy_352.jpg) center no-repeat;
@@ -409,13 +412,13 @@ body .about .card-item .card-4 {
 }
 
 @media (max-width: 600px) {
-  body .about .card-item .card-4 {
+  .about .card-item .card-4 {
     max-width: 60%;
     margin: 0 auto;
   }
 }
 
-body .about .card-item .card-5 {
+.about .card-item .card-5 {
   width: 100%;
   height: 220px;
   background: url(../img/people/rectangle_5_copy_342.jpg) center no-repeat;
@@ -423,63 +426,62 @@ body .about .card-item .card-5 {
 }
 
 @media (max-width: 600px) {
-  body .about .card-item .card-5 {
+  .about .card-item .card-5 {
     max-width: 60%;
     margin: 0 auto;
   }
 }
 
-body .about .card-item .card__text {
+.about .card-item .card__text {
   color: #555555;
 }
 
-body .about .card-item .card__text .name {
-  font-family: Montserrat;
+.about .card-item .card__text .name {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-body .about .card-item .card__text .position {
-  font-family: RobotoSlab;
+.about .card-item .card__text .position {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1.8;
-  font-weight: 500;
 }
 
-body .about .card-item:hover .card__image__links {
+.about .card-item:hover .card__image__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .works .btn-default:focus {
+.works .btn-default:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 2px solid #c0301c;
 }
 
-body .works .btn-default:active {
+.works .btn-default:active {
   color: #c0301c;
 }
 
-body .works .row .item .image {
+.works .row .item .image {
   width: 100%;
   height: 320px;
 }
 
 @media (max-width: 992px) {
-  body .works .row .item .image {
+  .works .row .item .image {
     height: 250px;
   }
 }
 
-body .works .row .item .image .image-text {
+.works .row .item .image .image-text {
   display: none;
 }
 
-body .works .row .item:hover .image-text {
+.works .row .item:hover .image-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,28 +490,26 @@ body .works .row .item:hover .image-text {
   height: 100%;
 }
 
-body .works .row .item:hover .image-text .image-title {
-  font-family: Montserrat;
-  font-size: 18px;
+.works .row .item:hover .image-text .image-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   line-height: 24px;
-  font-weight: 400;
   color: #ffffff;
 }
 
-body .works .row .item:hover .image-text .image-type {
-  font-family: RobotoSlab;
+.works .row .item:hover .image-text .image-type {
+  font-family: 'Roboto Slab', serif;
   font-size: 12px;
-  line-height: 24px;
-  font-weight: 500;
+  line-height: 30px;
   letter-spacing: 0.05em;
   color: #ffffff;
 }
 
-body .works .row .item:hover .image-text .image-button a {
+.works .row .item:hover .image-text .image-button a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -520,94 +520,93 @@ body .works .row .item:hover .image-text .image-button a {
   padding: 2% 5%;
 }
 
-body .works .row .item:hover .image-text .image-button a span {
+.works .row .item:hover .image-text .image-button a span {
   margin: 0 0 0 10px;
 }
 
-body .works .row .img1 {
+.works .row .img1 {
   background: url(../img/works/rectangle_9_copy_461.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img2 {
+.works .row .img2 {
   background: url(../img/works/rectangle_9_copy_511.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img3 {
+.works .row .img3 {
   background: url(../img/works/rectangle_9_copy_531.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img4 {
+.works .row .img4 {
   background: url(../img/works/rectangle_9_copy_556.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img5 {
+.works .row .img5 {
   background: url(../img/works/rectangle_9_copy_576.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img6 {
+.works .row .img6 {
   background: url(../img/works/rectangle_9_copy_597.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img7 {
+.works .row .img7 {
   background: url(../img/works/rectangle_9_copy_619.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img8 {
+.works .row .img8 {
   background: url(../img/works/rectangle_9_copy_639.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .works .row .img9 {
+.works .row .img9 {
   background: url(../img/works/rectangle_9_copy_660.jpg) center no-repeat;
   background-size: cover;
 }
 
-body .banner {
+.banner {
   background: url(../img/background/rectangle_14_copy_871.jpg) no-repeat;
   background-size: cover;
 }
 
-body .banner .red-filter {
+.banner .red-filter {
   background-color: rgba(192, 48, 28, 0.6);
 }
 
-body .banner .banner-text {
-  font-family: RobotoSlab;
+.banner .banner-text {
+  font-family: 'Roboto Slab', serif;
   font-size: 30px;
   line-height: 1.2;
-  font-weight: 400;
   color: #ffffff;
 }
 
 @media (max-width: 600px) {
-  body .banner .banner-text {
+  .banner .banner-text {
     font-size: 25px;
   }
 }
 
-body .blog .blog-line {
+.blog .blog-line {
   width: 100%;
   height: 1px;
   background-color: #dddddd;
 }
 
-body .blog .post {
+.blog .post {
   cursor: pointer;
 }
 
-body .blog .post img {
+.blog .post img {
   width: 100%;
 }
 
-body .blog .post .text .text-title .data {
-  font-family: Montserrat;
+.blog .post .text .text-title .data {
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
   font-weight: 700;
   color: #777777;
@@ -615,46 +614,44 @@ body .blog .post .text .text-title .data {
   padding: 2%;
 }
 
-body .blog .post .text .text-title .data .data-num {
+.blog .post .text .text-title .data .data-num {
   font-size: 24px;
   line-height: 20px;
 }
 
-body .blog .post .text .text-title .data .data-month {
+.blog .post .text .text-title .data .data-month {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-body .blog .post .text .text-title .name {
+.blog .post .text .text-title .name {
   color: #555555;
 }
 
-body .blog .post .text .text-title .name .name-heading {
-  font-family: Montserrat;
+.blog .post .text .text-title .name .name-heading {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-body .blog .post .text .text-title .name .name-author {
-  font-family: RobotoSlab;
+.blog .post .text .text-title .name .name-author {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
   color: #777777;
 }
 
-body .blog .post .text .text-basis {
-  font-family: RobotoSlab;
+.blog .post .text .text-basis {
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .blog .post .text .blog-button {
-  font-family: RobotoSlab;
+.blog .post .text .blog-button {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 700;
@@ -663,19 +660,19 @@ body .blog .post .text .blog-button {
   color: #000000;
 }
 
-body .blog .post:hover .text .red {
+.blog .post:hover .text .red {
   color: #c0301c;
 }
 
-body .feedback {
+.feedback {
   background-color: #f8f8f8;
 }
 
-body .feedback .carousel .carousel-indicators {
+.feedback .carousel .carousel-indicators {
   position: relative;
 }
 
-body .feedback .carousel .carousel-indicators li {
+.feedback .carousel .carousel-indicators li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -683,28 +680,26 @@ body .feedback .carousel .carousel-indicators li {
   opacity: 1;
 }
 
-body .feedback .carousel .carousel-indicators .active {
+.feedback .carousel .carousel-indicators .active {
   background-color: #c0301c;
 }
 
-body .feedback .carousel .carousel-inner .review-text {
-  font-family: RobotoSlab;
+.feedback .carousel .carousel-inner .review-text {
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .feedback .carousel .carousel-inner .review-author {
-  font-family: RobotoSlab;
+.feedback .carousel .carousel-inner .review-author {
+  font-family: 'Roboto Slab', serif;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .contacts .basis .location .location-title {
-  font-family: Montserrat;
+.contacts .basis .location .location-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 600;
@@ -712,146 +707,161 @@ body .contacts .basis .location .location-title {
   color: #555555;
 }
 
-body .contacts .basis .location .location-text,
-body .contacts .basis .location a {
-  font-family: RobotoSlab;
+.contacts .basis .location .location-text,
+.contacts .basis .location a {
+  font-family: 'Roboto Slab', serif;
   font-size: 12px;
   line-height: 20px;
-  font-weight: 400;
   color: #555555;
 }
 
-body .contacts .basis .location a:hover {
+.contacts .basis .location a:hover {
   color: #c0301c;
 }
 
-body .contacts .basis .location .address {
+.contacts .basis .location .address {
   position: relative;
 }
 
-body .contacts .basis .location .address::before {
+.contacts .basis .location .address::before {
   content: url(../img/contacts/fa_map_marker_893.svg);
   position: absolute;
   top: 5px;
   left: -25px;
 }
 
-body .contacts .basis .location .phone {
+.contacts .basis .location .phone {
   position: relative;
 }
 
-body .contacts .basis .location .phone::before {
+.contacts .basis .location .phone::before {
   content: url(../img/contacts/fa_mobile_phone_908.svg);
   position: absolute;
   top: 2px;
   left: -25px;
 }
 
-body .contacts .basis .location .email {
+.contacts .basis .location .email {
   position: relative;
 }
 
-body .contacts .basis .location .email::before {
+.contacts .basis .location .email::before {
   content: url(../img/contacts/fa_envelope_o_909.svg);
   position: absolute;
   top: 7px;
   left: -25px;
 }
 
-body .contacts .basis .forms input,
-body .contacts .basis .forms textarea {
+.contacts .basis .location .contact {
+  margin: 0 0 0 30px;
+}
+
+.contacts .basis .forms input,
+.contacts .basis .forms textarea {
   border: 1px solid #555555;
 }
 
-body .contacts .basis .forms input::-webkit-input-placeholder,
-body .contacts .basis .forms textarea::-webkit-input-placeholder {
-  font-family: RobotoSlab;
+.contacts .basis .forms input::-webkit-input-placeholder,
+.contacts .basis .forms textarea::-webkit-input-placeholder {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #555555;
 }
 
-body .contacts .basis .forms input:-ms-input-placeholder,
-body .contacts .basis .forms textarea:-ms-input-placeholder {
-  font-family: RobotoSlab;
+.contacts .basis .forms input:-ms-input-placeholder,
+.contacts .basis .forms textarea:-ms-input-placeholder {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #555555;
 }
 
-body .contacts .basis .forms input::-ms-input-placeholder,
-body .contacts .basis .forms textarea::-ms-input-placeholder {
-  font-family: RobotoSlab;
+.contacts .basis .forms input::-ms-input-placeholder,
+.contacts .basis .forms textarea::-ms-input-placeholder {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #555555;
 }
 
-body .contacts .basis .forms input::placeholder,
-body .contacts .basis .forms textarea::placeholder {
-  font-family: RobotoSlab;
+.contacts .basis .forms input::placeholder,
+.contacts .basis .forms textarea::placeholder {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #555555;
 }
 
-body .contacts .basis .forms input:focus,
-body .contacts .basis .forms textarea:focus {
+.contacts .basis .forms input:focus,
+.contacts .basis .forms textarea:focus {
   border: 1px solid #c0301c;
 }
 
-body .contacts .basis .forms input {
+.contacts .basis .forms input.input_text {
   height: 40px;
   padding: 0 0 0 2%;
 }
 
-body .contacts .basis .forms textarea {
+@media (max-width: 768px) {
+  .contacts .basis .forms input.input_text {
+    height: 60px;
+    padding: 2%;
+  }
+}
+
+.contacts .basis .forms textarea {
   height: 105px;
   padding: 2% 0 0 2%;
   resize: none;
 }
 
-body .contacts .basis .forms .forms-submit .submit-button {
-  font-family: RobotoSlab;
+.contacts .basis .forms .forms-submit .submit-button {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
   color: #555555;
   border: 1px solid #555555;
   background-color: transparent;
-  padding: 5px 30px;
+  padding: 10px 30px;
 }
 
-body .contacts .basis .forms .forms-submit .submit-subtitle span {
-  color: #c0301c;
-}
-
-body .footer {
+.contacts .basis .forms .forms-submit .submit-button:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
   background-color: #c0301c;
 }
 
-body .footer .footer-links a {
+.contacts .basis .forms .forms-submit .submit-subtitle span {
+  color: #c0301c;
+}
+
+.footer {
+  background-color: #c0301c;
+}
+
+.footer .footer-links a {
   display: inline-block;
   border: 2px solid #ffffff;
   border-radius: 50%;
   padding: 7px 5px;
 }
 
-body .footer .footer-line {
+.footer .footer-line {
   width: 50px;
   height: 2px;
   background-color: #ffffff;
 }
 
-body .footer .footer-text {
-  font-family: RobotoSlab;
+.footer .footer-text {
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   line-height: 1;
-  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
 }

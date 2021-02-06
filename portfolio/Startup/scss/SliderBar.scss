@@ -48,12 +48,6 @@
    .swiper-container-rtl .swiper-button-next:after {
       content: url(../img/icons/fa_angle_left_417.png);
       transform: rotate(-180deg);
-      
-
-
-      @media(max-width:768px) {
-         content: none;
-      }
    }
 
    .swiper-button-next,
@@ -70,11 +64,6 @@
    .swiper-button-next:after,
    .swiper-container-rtl .swiper-button-prev:after {
       content: url(../img/icons/fa_angle_left_417.png);
-
-      @media(max-width:768px) {
-         content: none;
-      }
-
    }
 
    .swiper-pagination {
