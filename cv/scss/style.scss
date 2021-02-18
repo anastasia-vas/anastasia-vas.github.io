@@ -68,6 +68,7 @@ body {
       font-size: 3.2rem;
       line-height: 1.4;
       letter-spacing: 0.03em;
+      margin: 0 0 6% 0;
 
       @media(max-width:600px) {
          font-size: 2.7rem;
@@ -404,33 +405,6 @@ body {
 
 .portfolio_basis {
 
-   .title{
-      margin: 0 0 3% 0;
-   }
-
-   .other {
-      text-align: right;
-      margin: 0 0 3% 0;
-
-      a {
-         color: $blue;
-         font-size: 1.8rem;
-         line-height: 1.4;
-         letter-spacing: 0.03em;
-         margin: 0 0 6% 0;
-
-         @media(max-width:600px) {
-            font-size: 1.5rem;
-            line-height: 1;
-         }
-
-         @media(max-width:500px) {
-            font-size: 1.3rem;
-         }
-      }
-
-   }
-
    .row {
       display: flex;
       flex-wrap: wrap;
@@ -504,10 +478,6 @@ body {
 .contacts_basis {
    color: #000000;
    z-index: 10;
-
-   .title {
-      margin: 0 0 6% 0;
-   }
 
    .block {
       .social {
