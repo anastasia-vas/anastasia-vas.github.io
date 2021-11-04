@@ -1,0 +1,8 @@
+@media (max-width:500px) {
+   .calc{
+      width: 100%;
+   }
+   .set-of-math-operators{
+      margin:2% 0;
+   }
+}
