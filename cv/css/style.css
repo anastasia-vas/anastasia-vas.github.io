@@ -490,11 +490,17 @@ body .mobile_nav .links li:hover a, body .mobile_nav .links li:active a {
   margin: 0;
 }
 
+.intro_basis .skills{
+   width: -webkit-fit-content;
+   width: -moz-fit-content;
+   width: fit-content;
+   cursor: pointer;
+}
+
 .intro_basis .skills .skills-more {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  cursor: pointer;
   margin: 0 0 10px 0;
 }
 
