@@ -579,10 +579,6 @@ body .mobile_nav .links li:hover a, body .mobile_nav .links li:active a {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: reverse;
-   -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
 }
 
 .portfolio_basis .row .item {
