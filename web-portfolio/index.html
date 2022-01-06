@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <title>Portfolio</title>
+</head>
+
+<body>
+   <div id="app">
+      <div class="mobile_nav" :class="{hide : !showMenu}">
+         <div class="close" @click="showMenu = false"></div>
+         <ul>
+            <li @click="showMenu = false"><a href="#skills">Skills</a></li>
+            <li @click="showMenu = false"><a href="#portfolio">Portfolio</a></li>
+            <li @click="showMenu = false"><a href="#contacts">Contacts</a></li>
+         </ul>
+      </div>
+      <div class="wrapper">
+         <div class="content">
+            <div class="intro">
+               <div class="container">
+                  <div class="intro_internal">
+                     <nav>
+                        <ul>
+                           <li><a href="#skills">Skills</a></li>
+                           <li><a href="#portfolio">Portfolio</a></li>
+                           <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                        <div class="mobile_nav_icon" @click='showMenu = true'>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                        </div>
+                     </nav>
+                     <header>
+                        <div class="heading">
+                           <div>Front-end</div>
+                           <div>Developer</div>
+                        </div>
+                        <div class="description">
+                           <p>Hello, my name is Anastasia. I am front-end developer.</p>
+                           <p>Here you can find my works and contact me at social networks.</p>
+                        </div>
+                     </header>
+                  </div>
+               </div>
+            </div>
+            <div class="skills" id="skills">
+               <div class="container">
+                  <div class="skills_internal">
+                     <ul>
+                        <li>Html</li>
+                        <li>Css, Scss</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Vue.js</li>
+                        <li>Webpack</li>
+                        <li>Babel</li>
+                        <li>npm</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Avocode</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio" id="portfolio">
+               <div class="container">
+                  <div class="portfolio_internal">
+                     <div class="item">
+                        <div class="image"><img src="img/startup_landing.jpg" alt="startup_landing_image"></div>
+                        <div class="work_name">Startup langing page</div>
+                        <div class="line"></div>
+                        <div class="info">
+                           Landing page on Bootstrap. <br>
+                           Technologies: HTML5, Scss, JQuery
+                        </div>
+                        <div class="more"><a href="#">View more</a></div>
+                     </div>
+                     <div class="item">
+                        <div class="image"><img src="img/shopno_landing.jpg" alt="startup_landing_image"></div>
+                        <div class="work_name">Shopno langing page</div>
+                        <div class="line"></div>
+                        <div class="info">
+                           Landing page on Css Flexbox. <br>
+                           Technologies: HTML5, CSS3, JavaScript, Gulp
+                        </div>
+                        <div class="more"><a href="#">View more</a></div>
+                     </div>
+                     <div class="item">
+                        <div class="image"><img src="img/shopno_landing.jpg" alt="startup_landing_image"></div>
+                        <div class="work_name">Shopno langing page</div>
+                        <div class="line"></div>
+                        <div class="info">
+                           Landing page on Css Flexbox. <br>
+                           Technologies: HTML5, CSS3, JavaScript, Gulp
+                        </div>
+                        <div class="more"><a href="#">View more</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="contacts" id="contacts">
+               <div class="container">
+                  <div class="contacts_internal">
+                     <ul class="links">
+                        <li><a href="mailto:vasilevskayaan19@gmail.com"><img src="img/icons/email.svg"
+                                 alt=""><span>vasilevskayaan19@gmail.com</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/anastasia-vasilevskaya-648aa81b6/"><img
+                                 src="img/icons/linkedin.svg" alt=""><span>Anastasia Vasilevskaya</span></a></li>
+                        <li><a href="https://github.com/anastasia-vas"><img src="img/icons/github.svg"
+                                 alt=""><span>anastasia-vas</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>2020-2022, Vasilevskaya Anastasia</footer>
+      </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
