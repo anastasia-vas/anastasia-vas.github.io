@@ -91,6 +91,10 @@ h6 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -118,14 +122,14 @@ h6 {
 @media (min-width: 768px) {
   .col-5_8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 48.33333%;
-            flex: 0 0 48.33333%;
+    -ms-flex: 0 0 48.33333%;
+    flex: 0 0 48.33333%;
     max-width: 48.33333%;
   }
 }
 
 .info .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
@@ -140,14 +144,14 @@ h6 {
 }
 
 .info .subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   line-height: 24px;
   color: #555555;
 }
 
 .button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 2px solid #ffffff;
   border-radius: 2px;
   padding: 10px 30px;
@@ -156,6 +160,7 @@ h6 {
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .button:hover {
@@ -165,8 +170,8 @@ h6 {
 
 .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .menu {
@@ -205,7 +210,7 @@ h6 {
 }
 
 .intro .header .icon {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -219,8 +224,8 @@ h6 {
   border-radius: 50%;
   padding: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .intro .header .nav .burger .burger__lines .line {
@@ -235,7 +240,7 @@ h6 {
 }
 
 .intro .header .nav .nav-links a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.025em;
@@ -257,7 +262,7 @@ h6 {
 }
 
 .intro .offer h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 1.2;
   font-weight: 500;
@@ -271,8 +276,12 @@ h6 {
 }
 
 .intro .offer p {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 20px;
+}
+
+.services .row .column {
+  cursor: pointer;
 }
 
 .services .row .column:hover .img {
@@ -289,16 +298,18 @@ h6 {
   margin: 0 auto;
   border: 2px solid #dddddd;
   border-radius: 50%;
+  transition: 0.5s;
 }
 
 .services .row .column .img .services_icon {
   width: 43px;
   height: 40px;
   fill: #c0301c;
+  transition: 0.5s;
 }
 
 .services .row .column-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -307,7 +318,7 @@ h6 {
 }
 
 .services .row .column-subtitle {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
@@ -318,7 +329,7 @@ h6 {
 }
 
 .about .description .text {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
@@ -326,15 +337,16 @@ h6 {
 
 .about .card-item .card__image .card__image__links {
   display: none;
+  cursor: pointer;
   background-color: rgba(85, 85, 85, 0.5);
   width: 100%;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   padding: 0 0 10px 0;
 }
 
@@ -343,9 +355,10 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 5px 0 0;
+  transition: 0.5s;
 }
 
 .about .card-item .card__image .card__image__links a img {
@@ -437,7 +450,7 @@ h6 {
 }
 
 .about .card-item .card__text .name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: 600;
@@ -445,7 +458,7 @@ h6 {
 }
 
 .about .card-item .card__text .position {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1.8;
 }
@@ -458,7 +471,7 @@ h6 {
 
 .works .btn-default:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 2px solid #c0301c;
 }
 
@@ -478,27 +491,29 @@ h6 {
 }
 
 .works .row .item .image .image-text {
-  display: none;
-}
-
-.works .row .item:hover .image-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.works .row .item:hover .image-text {
+  opacity: 1;
   background-color: rgba(192, 48, 28, 0.7);
   width: 100%;
   height: 100%;
 }
 
 .works .row .item:hover .image-text .image-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
 }
 
 .works .row .item:hover .image-text .image-type {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 12px;
   line-height: 30px;
   letter-spacing: 0.05em;
@@ -509,7 +524,7 @@ h6 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
@@ -579,7 +594,7 @@ h6 {
 }
 
 .banner .banner-text {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 30px;
   line-height: 1.2;
   color: #ffffff;
@@ -599,6 +614,7 @@ h6 {
 
 .blog .post {
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .blog .post img {
@@ -606,7 +622,7 @@ h6 {
 }
 
 .blog .post .text .text-title .data {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 700;
   color: #777777;
@@ -629,7 +645,7 @@ h6 {
 }
 
 .blog .post .text .text-title .name .name-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -637,21 +653,21 @@ h6 {
 }
 
 .blog .post .text .text-title .name .name-author {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 24px;
   color: #777777;
 }
 
 .blog .post .text .text-basis {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   line-height: 24px;
   color: #555555;
 }
 
 .blog .post .text .blog-button {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 700;
@@ -685,21 +701,21 @@ h6 {
 }
 
 .feedback .carousel .carousel-inner .review-text {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 18px;
   line-height: 30px;
   color: #555555;
 }
 
 .feedback .carousel .carousel-inner .review-author {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 20px;
   line-height: 30px;
   color: #555555;
 }
 
 .contacts .basis .location .location-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 600;
@@ -709,10 +725,11 @@ h6 {
 
 .contacts .basis .location .location-text,
 .contacts .basis .location a {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 12px;
   line-height: 20px;
   color: #555555;
+  transition: 0.5s;
 }
 
 .contacts .basis .location a:hover {
@@ -759,11 +776,12 @@ h6 {
 .contacts .basis .forms input,
 .contacts .basis .forms textarea {
   border: 1px solid #555555;
+  transition: 0.5s;
 }
 
 .contacts .basis .forms input::-webkit-input-placeholder,
 .contacts .basis .forms textarea::-webkit-input-placeholder {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
@@ -772,7 +790,7 @@ h6 {
 
 .contacts .basis .forms input:-ms-input-placeholder,
 .contacts .basis .forms textarea:-ms-input-placeholder {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
@@ -781,7 +799,7 @@ h6 {
 
 .contacts .basis .forms input::-ms-input-placeholder,
 .contacts .basis .forms textarea::-ms-input-placeholder {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
@@ -790,7 +808,7 @@ h6 {
 
 .contacts .basis .forms input::placeholder,
 .contacts .basis .forms textarea::placeholder {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
@@ -821,7 +839,7 @@ h6 {
 }
 
 .contacts .basis .forms .forms-submit .submit-button {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
@@ -859,7 +877,7 @@ h6 {
 }
 
 .footer .footer-text {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   line-height: 1;
   text-transform: uppercase;
