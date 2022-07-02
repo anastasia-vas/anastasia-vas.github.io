@@ -1,253 +1,433 @@
-@media only screen and (max-width: 992px) {
-   .intro {
-      .intro_internal {
-         header {
-            padding: 10% 0;
-            .heading {
-               width: unset;
-               margin: 0;
-               font-size: 135px;
+@media only screen and (max-width: 1440px) {
+  .sidebar-sections {
+    width: 25%;
+    right: 40px;
+    a.section {
+      font-size: 47px;
+      margin: 0 45px 8px 0;
+    }
+  }
 
-               div:first-child {
-                  margin: 0;
-               }
+  .wrapper {
+    padding: 0 40px 60px 40px;
+  }
 
-               div:last-child {
-                  margin: 0;
-               }
-            }
-
-            .description {
-               font-size: 23px;
-            }
-         }
+  .about {
+    padding: 45px 40px;
+    .main-info {
+      h3 {
+        font-size: 70px;
+        margin: 0 0 40px 0;
       }
-   }
-
-   .skills {
-      .skills_internal {
-         ul {
-            li {
-               font-size: 27px;
-            }
-         }
+      p {
+        font-size: 33px;
+        line-height: 1.1;
       }
-   }
+    }
+  }
 
-   .portfolio {
-      .portfolio_internal {
-         .item {
-            flex: 0 1 45%;
-         }
+  .intro {
+    .header {
+      padding: 35px 0 0 0;
+
+      p.name,
+      p.about-button {
+        font-size: 27px;
       }
-   }
-
-   .contacts {
-      .contacts_internal {
-         ul.links {
-            li {
-
-               a {
-
-                  img {
-                     width: 30px;
-                     height: 30px;
-                  }
-
-                  span {
-                     font-size: 25px;
-                  }
-
-               }
-            }
-         }
+    }
+    .main-info {
+      margin: 16.5% 0 40px 0;
+      .heading {
+        h1 {
+          font-size: 145px;
+        }
       }
-   }
+    }
+
+    .location {
+      h2 {
+        font-size: 33px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .details {
+    padding: 35px 0 5% 0;
+
+    h3 {
+      font-size: 80px;
+      margin: 0 0 40px 0;
+    }
+    .skills-list {
+      width: 60%;
+      li {
+        font-size: 44px;
+        line-height: 1.4;
+        margin: 0 35px 0 0;
+      }
+    }
+    .portfolio-list {
+      width: 74%;
+      .portfiolio-item {
+        margin: 0 auto 70px 0;
+        .info {
+          margin: 0 0 0 30px;
+          .name-of-work {
+            font-size: 43px;
+          }
+          .description {
+            font-size: 26px;
+            margin: 5px 0 25px 0;
+          }
+          .technologies {
+            font-size: 26px;
+          }
+        }
+      }
+      .portfiolio-item:hover {
+        .image::before {
+          background-size: 40px 40px;
+        }
+      }
+    }
+    .contacts-links {
+      .link {
+        margin: 6px 0;
+        a {
+          font-size: 38px;
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 768px) {
-   .intro {
-      .intro_internal {
-         header {
-            padding: 15% 0;
-            .heading {
-               font-size: 105px;
-            }
+@media only screen and (max-width: 1200px) {
+  .sidebar-sections {
+    display: none;
+  }
 
-            .description {
-               font-size: 20px;
-            }
-         }
+  .details {
+    .skills-list {
+      width: 80%;
+    }
+    .portfolio-list {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .intro {
+    .main-info {
+      margin: 23% 0 40px 0;
+      .heading {
+        h1 {
+          font-size: 15vw;
+        }
       }
-   }
+    }
+  }
 
-   .skills {
-      .skills_internal {
-         ul {
-            li {
-               font-size: 25px;
-            }
-         }
+  .about {
+    .main-info {
+      h3 {
+        font-size: 60px;
       }
-   }
-
-   .portfolio {
-      .portfolio_internal {
-         .item {
-            flex: 0 1 45%;
-
-            .work_name {
-               font-size: 22px;
-            }
-
-            .info {
-               font-size: 15px;
-            }
-
-            .more {
-               a {
-                  font-size: 18px;
-               }
-            }
-         }
+      p {
+        font-size: 27px;
+        line-height: 1.1;
       }
-   }
+    }
+  }
 
-   .contacts {
-      .contacts_internal {
-         ul.links {
-            li {
-               a {
-                  img {
-                     width: 27px;
-                     height: 27px;
-                  }
-
-                  span {
-                     font-size: 23px;
-                  }
-
-               }
-            }
-         }
+  .details {
+    h3 {
+      font-size: 70px;
+    }
+    .skills-list {
+      width: 90%;
+      li {
+        font-size: 40px;
       }
-   }
+    }
+    .portfolio-list {
+      .portfiolio-item {
+        margin: 0 auto 70px 0;
+        .info {
+          margin: 0 0 0 20px;
+          .name-of-work {
+            font-size: 36px;
+          }
+          .description {
+            font-size: 24px;
+            margin: 5px 0 20px 0;
+          }
+          .technologies {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .contacts-links {
+      .link {
+        margin: 6px 0;
+        a {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .intro {
+    .header {
+      padding: 30px 0 0 0;
+
+      p.name,
+      p.about-button {
+        font-size: 24px;
+      }
+    }
+    .main-info {
+      margin: 32% 0 30px 0;
+      .heading {
+        h1 {
+          font-size: 15vw;
+        }
+      }
+    }
+    .location {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .about {
+    .main-info {
+      h3 {
+        font-size: 60px;
+        margin: 0 0 30px 0;
+      }
+      p {
+        font-size: 27px;
+        line-height: 1.1;
+      }
+    }
+  }
+
+  .details {
+    padding: 30px 0 5% 0;
+    h3 {
+      font-size: 62px;
+      margin: 0 0 30px 0;
+    }
+    .skills-list {
+      width: 100%;
+      margin: 0 0 60px 0;
+      li {
+        font-size: 35px;
+      }
+    }
+    .portfolio-list {
+      .portfiolio-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto 20px 0;
+        .image {
+          flex: 0 1 100%;
+          padding-top: 50%;
+        }
+        .info {
+          margin: 20px 0 0 0;
+          .name-of-work {
+            font-size: 36px;
+          }
+          .description {
+            font-size: 24px;
+            margin: 5px 0 20px 0;
+          }
+          .technologies {
+            font-size: 24px;
+          }
+        }
+      }
+      .divide {
+        width: 100%;
+        margin: 20px 0 30px 0;
+        height: 1px;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+      }
+    }
+    .contacts-links {
+      .link {
+        margin: 20px 0;
+        a {
+          span {
+            display: flex;
+          }
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-   .intro {
-      .intro_internal {
-         nav {
-            padding: 6% 0;
-            ul {
-               li {
-                  margin: 0 40px 0 0;
+  .wrapper {
+    padding: 0 20px 60px 20px;
+  }
 
-                  a {
-                     font-size: 18px;
-                  }
-               }
-            }
-         }
-
-         header {
-            .heading {
-               font-size: 80px;
-            }
-
-            .description {
-               font-size: 18px;
-            }
-         }
+  .about {
+    padding: 35px 20px;
+    .close {
+      width: 40px;
+      height: 40px;
+    }
+    .main-info {
+      h3 {
+        font-size: 58px;
       }
-   }
-
-   .skills {
-      .skills_internal {
-         ul {
-            li {
-               margin: 0 30px 20px 0;
-               font-size: 22px;
-            }
-         }
+      p {
+        font-size: 25px;
       }
-   }
+    }
+  }
 
-   .portfolio {
-      .portfolio_internal {
+  .intro {
+    .header {
+      padding: 20px 0 0 0;
 
-         .item {
-            flex: 0 1 80%;
-            margin: auto;
-
-            .info {
-               font-size: 16px;
-            }
-         }
+      p.name,
+      p.about-button {
+        font-size: 22px;
       }
-   }
-
-   .contacts {
-      .contacts_internal {
-         ul.links {
-            li {
-               a {
-                  img {
-                     width: 25px;
-                     height: 25px;
-                     margin: 0 10px 0 0;
-                  }
-               }
-            }
-         }
+    }
+    .main-info {
+      margin: 37% 0 30px 0;
+      .heading {
+        h1 {
+          font-size: 15.8vw;
+        }
       }
-   }
+    }
+  }
+  .details {
+    padding: 20px 0 5% 0;
+    h3 {
+      font-size: 58px;
+    }
+    .skills-list {
+      margin: 0 0 50px 0;
+      li {
+        font-size: 32px;
+      }
+    }
+    .portfolio-list {
+      .portfiolio-item {
+        .info {
+          margin: 20px 0 0 0;
+          .name-of-work {
+            font-size: 33px;
+          }
+          .description {
+            font-size: 22px;
+            margin: 5px 0 17px 0;
+          }
+          .technologies {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .contacts-links {
+      .link {
+        margin: 20px 0;
+        a {
+          font-size: 23px;
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 465px) {
-   .intro {
-      .intro_internal {
-         nav {
-            justify-content: flex-end;
-            ul{
-               display: none;
-            }
-            .mobile_nav_icon{
-               display: flex;
-            }            
-         }
-
-         header {
-            padding: 20% 0;
-            .heading {
-               font-size: 17vw;
-            }
-
-            .description {
-               font-size: 16px;
-            }
-         }
+@media only screen and (max-width: 410px) {
+  .wrapper {
+    padding: 0 20px 60px 20px;
+  }
+  .about {
+    padding: 30px 20px;
+    .main-info {
+      h3 {
+        font-size: 50px;
       }
-   }
+      p {
+        font-size: 21px;
+      }
+    }
+  }
+  .intro {
+    .header {
+      padding: 20px 0 0 0;
 
-   .portfolio {
-      .portfolio_internal {
-         .item {
-            flex: 0 1 95%;
-         }
+      p.name,
+      p.about-button {
+        font-size: 5.45vw;
       }
-   }
-   .contacts {
-      .contacts_internal {
-         ul.links {
-            li {
-               a {
-                  span{
-                     font-size: 5.5vw;
-                  }
-               }
-            }
-         }
+    }
+    .main-info {
+      margin: 50% 0 20px 0;
+    }
+    .location {
+      h2 {
+        font-size: 7vw;
+        img {
+          width: 35px;
+          height: 35px;
+        }
       }
-   }
+    }
+  }
+  .details {
+    h3 {
+      font-size: 50px;
+      margin: 0 0 20px 0;
+    }
+    .skills-list {
+      margin: 0 0 30px 0;
+      li {
+        font-size: 27px;
+      }
+    }
+    .portfolio-list {
+      .portfiolio-item {
+        .info {
+          margin: 15px 0 0 0;
+          .name-of-work {
+            font-size: 28px;
+          }
+          .description {
+            font-size: 20px;
+            margin: 5px 0 15px 0;
+          }
+          .technologies {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .contacts-links {
+      .link {
+        margin: 20px 0;
+        a {
+          font-size: 5.85vw;
+        }
+      }
+    }
+  }
 }

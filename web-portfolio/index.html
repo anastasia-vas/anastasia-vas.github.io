@@ -4,220 +4,297 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="freelancehunt" content="accf452c874497a" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <title>Portfolio</title>
+    <title>Web-portfolio</title>
   </head>
-
   <body>
     <div id="app">
-      <div class="mobile_nav" :class="{hide : !showMenu}">
-        <div class="close" @click="showMenu = false"></div>
-        <ul>
-          <li @click="showMenu = false"><a href="#skills">Skills</a></li>
-          <li @click="showMenu = false"><a href="#portfolio">Portfolio</a></li>
-          <li @click="showMenu = false"><a href="#contacts">Contacts</a></li>
-        </ul>
+      <div class="about" :class="{open:openAbout}">
+        <div class="close" @click="openAbout=false"></div>
+        <div class="main-info">
+          <h3>About me</h3>
+          <p>Hello, my name is Anastasia.</p>
+          <p>I am a Front-end Developer. Based in Kyiv, Ukraine.</p>
+          <p>Open to cooperation and new proposals.</p>
+          <p>
+            Email me
+            <a href="mailto:vasilevskayaan19@gmail.com"
+              >vasilevskayaan19@gmail.com</a
+            >
+          </p>
+        </div>
       </div>
+
       <div class="wrapper">
-        <div class="content">
-          <div class="intro">
-            <div class="container">
-              <div class="intro_internal">
-                <nav>
-                  <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                  </ul>
-                  <div class="mobile_nav_icon" @click="showMenu = true">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </nav>
-                <header>
-                  <div class="heading">
-                    <div>Front-end</div>
-                    <div>Developer</div>
-                  </div>
-                  <div class="description">
-                    <p>
-                      Hello, my name is Anastasia. I am front-end developer.
-                    </p>
-                    <p>
-                      Here you can find my works and contact me at social
-                      networks.
-                    </p>
-                  </div>
-                </header>
-              </div>
+        <div class="sidebar-sections">
+          <a
+            href="#home"
+            class="home section"
+            :class="{active:activeSection == 'home'}"
+            @click="activeSection='home'"
+          >
+            home
+          </a>
+          <a
+            href="#skills"
+            class="skills section"
+            :class="{active:activeSection == 'skills'}"
+            @click="activeSection='skills'"
+          >
+            skills
+          </a>
+          <a
+            href="#portfolio"
+            class="portfolio section"
+            :class="{active:activeSection == 'portfolio'}"
+            @click="activeSection='portfolio'"
+          >
+            portfolio
+          </a>
+          <a
+            href="#for-fun"
+            class="for-fun section"
+            :class="{active:activeSection == 'for fun'}"
+            @click="activeSection='for fun'"
+            >for fun</a
+          >
+          <a
+            href="#contacts"
+            class="contacts section"
+            :class="{active:activeSection == 'contacts'}"
+            @click="activeSection='contacts'"
+            >contacts</a
+          >
+        </div>
+        <div
+          class="info-section intro"
+          id="home"
+          :class="{activeSection:activeSection == 'home'}"
+        >
+          <div class="header">
+            <p class="name">Anastasia Vasilevskaya</p>
+            <p class="about-button" @click="openAbout=!openAbout">About</p>
+          </div>
+          <div class="main-info">
+            <div class="heading">
+              <h1>Frontend</h1>
+              <h1>Developer</h1>
             </div>
           </div>
-          <div class="skills" id="skills">
-            <div class="container">
-              <div class="skills_internal">
-                <ul>
-                  <li>Html</li>
-                  <li>Css, Scss</li>
-                  <li>Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>Vue.js</li>
-                  <li>Webpack</li>
-                  <li>Babel</li>
-                  <li>npm</li>
-                  <li>Git</li>
-                  <li>Figma</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Avocode</li>
-                </ul>
-              </div>
-            </div>
+          <div class="location">
+            <h2>
+              Based in Kyiv, Ukraine
+              <img src="img/icons/ukraine.png" alt="" />
+            </h2>
           </div>
-          <div class="portfolio" id="portfolio">
-            <div class="container">
-              <div class="portfolio_internal">
-                <div class="item">
-                  <div class="image">
-                    <img
-                      src="img/moi_planu_na_god.png"
-                      alt="moi_planu_na_god_image"
-                    />
-                  </div>
-                  <div class="work_name">"My plans for the year"</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Website for the planners store.<br />
-                    Technologies: HTML5, Scss, Bootstrap Grid System,
-                    JavaScript.
-                  </div>
-                  <div class="more">
-                    <a href="https://anastasia-vas.github.io/Plany-na-god/"
-                      >View more</a
-                    >
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="image">
-                    <img
-                      src="img/beluga-caviar.png"
-                      alt="beluga-caviar_image"
-                    />
-                  </div>
-                  <div class="work_name">Russian Caviar Shop</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Website for the Russian caviar.<br />
-                    Technologies: HTML5, Scss, JavaScript.
-                  </div>
-                  <div class="more">
-                    <a href="https://russianbelugacaviar.com/">View more</a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="image">
-                    <img
-                      src="img/startup_landing.jpg"
-                      alt="startup_landing_image"
-                    />
-                  </div>
-                  <div class="work_name">Startup langing page</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Landing page on Bootstrap. <br />
-                    Technologies: HTML5, Scss, JQuery.
-                  </div>
-                  <div class="more">
-                    <a href="../portfolio/Startup/">View more</a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="image">
-                    <img
-                      src="img/shopno_landing.jpg"
-                      alt="shopno_landing_image"
-                    />
-                  </div>
-                  <div class="work_name">Shopno langing page</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Landing page on Css Flexbox. <br />
-                    Technologies: HTML5, CSS3, JavaScript, Gulp.
-                  </div>
-                  <div class="more">
-                    <a href="../portfolio/Shopno/">View more</a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="image">
-                    <img src="img/http-pets.png" alt="http-pets_image" />
-                  </div>
-                  <div class="work_name">Pets for each http status code</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Project on Vue.js.<br />
-                    Technologies: Vue CLI (Vue.js, Vue Router, Babel, Webpack,
-                    Scss).
-                  </div>
-                  <div class="more">
-                    <a href="https://anastasia-vas.github.io/http-pets/dist/"
-                      >View more</a
-                    >
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="image">
-                    <img src="img/calculator.JPG" alt="startup_landing_image" />
-                  </div>
-                  <div class="work_name">Calculator</div>
-                  <div class="line"></div>
-                  <div class="info">
-                    Calculator on JavaScript. <br />
-                    Technologies: HTML5, CSS3, JavaScript.
-                  </div>
-                  <div class="more">
-                    <a href="../portfolio/calculator/">View more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contacts" id="contacts">
-            <div class="container">
-              <div class="contacts_internal">
-                <ul class="links">
-                  <li>
-                    <a href="mailto:vasilevskayaan19@gmail.com"
-                      ><img src="img/icons/email.svg" alt="" /><span
-                        >vasilevskayaan19@gmail.com</span
-                      ></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/anastasia-vasilevskaya-648aa81b6/"
-                      ><img src="img/icons/linkedin.svg" alt="" /><span
-                        >Anastasia Vasilevskaya</span
-                      ></a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://github.com/anastasia-vas"
-                      ><img src="img/icons/github.svg" alt="" /><span
-                        >anastasia-vas</span
-                      ></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="page-arrows">
+            <a
+              href="#contacts"
+              class="arrow left"
+              @click="activeSection='contacts'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+            <a
+              href="#skills"
+              class="arrow right"
+              @click="activeSection='skills'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
           </div>
         </div>
-        <footer>2020-2022, Vasilevskaya Anastasia</footer>
+        <div
+          class="info-section details skills"
+          id="skills"
+          :class="{activeSection:activeSection == 'skills'}"
+        >
+          <h3>Skills</h3>
+          <ul class="development-skills skills-list">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Scss</li>
+            <li>Bootstrap</li>
+            <li>JavaScript/ES5+</li>
+            <li>Vue.js</li>
+            <li>Webpack</li>
+            <li>Babel</li>
+            <li>npm</li>
+            <li>Git</li>
+          </ul>
+          <ul class="programms-skills skills-list">
+            <li>Figma</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+          </ul>
+          <div class="page-arrows">
+            <a href="#home" class="arrow left" @click="activeSection='home'">
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+            <a
+              href="#portfolio"
+              class="arrow right"
+              @click="activeSection='portfolio'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="info-section details portfolio"
+          id="portfolio"
+          :class="{activeSection:activeSection == 'portfolio'}"
+        >
+          <h3>Portfolio</h3>
+          <div class="portfolio-list">
+            <div class="portfiolio-item">
+              <a
+                href="https://anastasia-vas.github.io/Plany-na-god/"
+                class="image"
+              >
+                <img src="img/moi_planu_na_god.png" alt="" />
+              </a>
+              <div class="info">
+                <div class="name-of-work">"My plans for the year"</div>
+                <div class="description">Website for the planners store.</div>
+                <div class="technologies">
+                  <span>Technologies: </span>HTML5, Scss, Bootstrap Grid System,
+                  JavaScript.
+                </div>
+              </div>
+            </div>
+            <div class="divide"></div>
+            <div class="portfiolio-item">
+              <a
+                href="https://anastasia-vas.github.io/portfolio/Startup/"
+                class="image"
+              >
+                <img src="img/startup_landing.jpg" alt="" />
+              </a>
+              <div class="info">
+                <div class="name-of-work">"Startup langing page"</div>
+                <div class="description">Landing page on Bootstrap.</div>
+                <div class="technologies">
+                  <span>Technologies: </span>HTML5, Scss, JQuery.
+                </div>
+              </div>
+            </div>
+            <div class="divide"></div>
+            <div class="portfiolio-item">
+              <a
+                href="https://anastasia-vas.github.io/portfolio/Shopno/"
+                class="image"
+              >
+                <img src="img/shopno_landing.jpg" alt="" />
+              </a>
+              <div class="info">
+                <div class="name-of-work">"Shopno langing page"</div>
+                <div class="description">Landing page on Css Flexbox.</div>
+                <div class="technologies">
+                  <span>Technologies: </span>HTML5, CSS3, JavaScript, Gulp.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-arrows">
+            <a
+              href="#skills"
+              class="arrow left"
+              @click="activeSection='skills'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+            <a
+              href="#for-fun"
+              class="arrow right"
+              @click="activeSection='for fun'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="info-section details for-fun"
+          id="for-fun"
+          :class="{activeSection:activeSection == 'for fun'}"
+        >
+          <h3>For fun</h3>
+          <div class="portfolio-list">
+            <div class="portfiolio-item">
+              <a
+                href="https://anastasia-vas.github.io/http-pets/dist/"
+                class="image"
+              >
+                <img src="img/http-pets.png" alt="" />
+              </a>
+              <div class="info">
+                <div class="name-of-work">"Pets for each http status code"</div>
+                <div class="description">Project on Vue.js.</div>
+                <div class="technologies">
+                  <span>Technologies: </span>Vue CLI (Vue.js, Vue Router, Babel,
+                  Webpack, Scss).
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-arrows">
+            <a
+              href="#portfolio"
+              class="arrow left"
+              @click="activeSection='portfolio'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+            <a
+              href="#contacts"
+              class="arrow right"
+              @click="activeSection='contacts'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="info-section details contacts"
+          id="contacts"
+          :class="{activeSection:activeSection == 'contacts'}"
+        >
+          <h3>Contacts</h3>
+          <div class="contacts-links">
+            <div class="link gmail">
+              <a href="mailto:vasilevskayaan19@gmail.com"
+                ><span>Gmail:</span> vasilevskayaan19@gmail.com</a
+              >
+            </div>
+            <div class="link linkedin">
+              <a
+                href="https://www.linkedin.com/in/anastasia-vasilevskaya-648aa81b6/"
+                ><span>LinkedIn:</span> Anastasia Vasilevskaya</a
+              >
+            </div>
+            <div class="link github">
+              <a href="https://github.com/anastasia-va"
+                ><span>Github:</span> anastasia-vas</a
+              >
+            </div>
+          </div>
+          <div class="page-arrows">
+            <a
+              href="#for-fun"
+              class="arrow left"
+              @click="activeSection='for fun'"
+            >
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+            <a href="#home" class="arrow right" @click="activeSection='home'">
+              <img src="img/icons/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.36"></script>
+    <script setup src="js/script.js"></script>
   </body>
 </html>

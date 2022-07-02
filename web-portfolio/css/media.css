@@ -1,139 +1,358 @@
-@media only screen and (max-width: 992px) {
-  .intro .intro_internal header {
-    padding: 10% 0;
+@media only screen and (max-width: 1440px) {
+  .sidebar-sections {
+    width: 25%;
+    right: 40px;
   }
-  .intro .intro_internal header .heading {
-    width: unset;
-    margin: 0;
-    font-size: 135px;
+  .sidebar-sections a.section {
+    font-size: 47px;
+    margin: 0 45px 8px 0;
   }
-  .intro .intro_internal header .heading div:first-child {
-    margin: 0;
+
+  .wrapper {
+    padding: 0 40px 60px 40px;
   }
-  .intro .intro_internal header .heading div:last-child {
-    margin: 0;
+
+  .about {
+    padding: 45px 40px;
   }
-  .intro .intro_internal header .description {
-    font-size: 23px;
+  .about .main-info h3 {
+    font-size: 70px;
+    margin: 0 0 40px 0;
   }
-  .skills .skills_internal ul li {
+  .about .main-info p {
+    font-size: 33px;
+    line-height: 1.1;
+  }
+
+  .intro .header {
+    padding: 35px 0 0 0;
+  }
+  .intro .header p.name,
+.intro .header p.about-button {
     font-size: 27px;
   }
-  .portfolio .portfolio_internal .item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%;
+  .intro .main-info {
+    margin: 16.5% 0 40px 0;
   }
-  .contacts .contacts_internal ul.links li a img {
-    width: 30px;
-    height: 30px;
+  .intro .main-info .heading h1 {
+    font-size: 145px;
   }
-  .contacts .contacts_internal ul.links li a span {
-    font-size: 25px;
+  .intro .location h2 {
+    font-size: 33px;
+  }
+  .intro .location h2 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .details {
+    padding: 35px 0 5% 0;
+  }
+  .details h3 {
+    font-size: 80px;
+    margin: 0 0 40px 0;
+  }
+  .details .skills-list {
+    width: 60%;
+  }
+  .details .skills-list li {
+    font-size: 44px;
+    line-height: 1.4;
+    margin: 0 35px 0 0;
+  }
+  .details .portfolio-list {
+    width: 74%;
+  }
+  .details .portfolio-list .portfiolio-item {
+    margin: 0 auto 70px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info {
+    margin: 0 0 0 30px;
+  }
+  .details .portfolio-list .portfiolio-item .info .name-of-work {
+    font-size: 43px;
+  }
+  .details .portfolio-list .portfiolio-item .info .description {
+    font-size: 26px;
+    margin: 5px 0 25px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .technologies {
+    font-size: 26px;
+  }
+  .details .portfolio-list .portfiolio-item:hover .image::before {
+    background-size: 40px 40px;
+  }
+  .details .contacts-links .link {
+    margin: 6px 0;
+  }
+  .details .contacts-links .link a {
+    font-size: 38px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .sidebar-sections {
+    display: none;
+  }
 
-@media only screen and (max-width: 768px) {
-  .intro .intro_internal header {
-    padding: 15% 0;
+  .details .skills-list {
+    width: 80%;
   }
-  .intro .intro_internal header .heading {
-    font-size: 105px;
+  .details .portfolio-list {
+    width: 100%;
   }
-  .intro .intro_internal header .description {
-    font-size: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .intro .main-info {
+    margin: 23% 0 40px 0;
   }
-  .skills .skills_internal ul li {
+  .intro .main-info .heading h1 {
+    font-size: 15vw;
+  }
+
+  .about .main-info h3 {
+    font-size: 60px;
+  }
+  .about .main-info p {
+    font-size: 27px;
+    line-height: 1.1;
+  }
+
+  .details h3 {
+    font-size: 70px;
+  }
+  .details .skills-list {
+    width: 90%;
+  }
+  .details .skills-list li {
+    font-size: 40px;
+  }
+  .details .portfolio-list .portfiolio-item {
+    margin: 0 auto 70px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info {
+    margin: 0 0 0 20px;
+  }
+  .details .portfolio-list .portfiolio-item .info .name-of-work {
+    font-size: 36px;
+  }
+  .details .portfolio-list .portfiolio-item .info .description {
+    font-size: 24px;
+    margin: 5px 0 20px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .technologies {
+    font-size: 24px;
+  }
+  .details .contacts-links .link {
+    margin: 6px 0;
+  }
+  .details .contacts-links .link a {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .intro .header {
+    padding: 30px 0 0 0;
+  }
+  .intro .header p.name,
+.intro .header p.about-button {
+    font-size: 24px;
+  }
+  .intro .main-info {
+    margin: 32% 0 30px 0;
+  }
+  .intro .main-info .heading h1 {
+    font-size: 15vw;
+  }
+  .intro .location h2 {
+    font-size: 30px;
+  }
+
+  .about .main-info h3 {
+    font-size: 60px;
+    margin: 0 0 30px 0;
+  }
+  .about .main-info p {
+    font-size: 27px;
+    line-height: 1.1;
+  }
+
+  .details {
+    padding: 30px 0 5% 0;
+  }
+  .details h3 {
+    font-size: 62px;
+    margin: 0 0 30px 0;
+  }
+  .details .skills-list {
+    width: 100%;
+    margin: 0 0 60px 0;
+  }
+  .details .skills-list li {
+    font-size: 35px;
+  }
+  .details .portfolio-list .portfiolio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto 20px 0;
+  }
+  .details .portfolio-list .portfiolio-item .image {
+    flex: 0 1 100%;
+    padding-top: 50%;
+  }
+  .details .portfolio-list .portfiolio-item .info {
+    margin: 20px 0 0 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .name-of-work {
+    font-size: 36px;
+  }
+  .details .portfolio-list .portfiolio-item .info .description {
+    font-size: 24px;
+    margin: 5px 0 20px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .technologies {
+    font-size: 24px;
+  }
+  .details .portfolio-list .divide {
+    width: 100%;
+    margin: 20px 0 30px 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .details .contacts-links .link {
+    margin: 20px 0;
+  }
+  .details .contacts-links .link a {
+    font-size: 32px;
+  }
+  .details .contacts-links .link a span {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 0 20px 60px 20px;
+  }
+
+  .about {
+    padding: 35px 20px;
+  }
+  .about .close {
+    width: 40px;
+    height: 40px;
+  }
+  .about .main-info h3 {
+    font-size: 58px;
+  }
+  .about .main-info p {
     font-size: 25px;
   }
-  .portfolio .portfolio_internal .item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%;
+
+  .intro .header {
+    padding: 20px 0 0 0;
   }
-  .portfolio .portfolio_internal .item .work_name {
+  .intro .header p.name,
+.intro .header p.about-button {
     font-size: 22px;
   }
-  .portfolio .portfolio_internal .item .info {
-    font-size: 15px;
+  .intro .main-info {
+    margin: 37% 0 30px 0;
   }
-  .portfolio .portfolio_internal .item .more a {
-    font-size: 18px;
+  .intro .main-info .heading h1 {
+    font-size: 15.8vw;
   }
-  .contacts .contacts_internal ul.links li a img {
-    width: 27px;
-    height: 27px;
+
+  .details {
+    padding: 20px 0 5% 0;
   }
-  .contacts .contacts_internal ul.links li a span {
+  .details h3 {
+    font-size: 58px;
+  }
+  .details .skills-list {
+    margin: 0 0 50px 0;
+  }
+  .details .skills-list li {
+    font-size: 32px;
+  }
+  .details .portfolio-list .portfiolio-item .info {
+    margin: 20px 0 0 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .name-of-work {
+    font-size: 33px;
+  }
+  .details .portfolio-list .portfiolio-item .info .description {
+    font-size: 22px;
+    margin: 5px 0 17px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .technologies {
+    font-size: 22px;
+  }
+  .details .contacts-links .link {
+    margin: 20px 0;
+  }
+  .details .contacts-links .link a {
     font-size: 23px;
   }
 }
+@media only screen and (max-width: 410px) {
+  .wrapper {
+    padding: 0 20px 60px 20px;
+  }
 
-@media only screen and (max-width: 600px) {
-  .intro .intro_internal nav {
-    padding: 6% 0;
+  .about {
+    padding: 30px 20px;
   }
-  .intro .intro_internal nav ul li {
-    margin: 0 40px 0 0;
+  .about .main-info h3 {
+    font-size: 50px;
   }
-  .intro .intro_internal nav ul li a {
-    font-size: 18px;
+  .about .main-info p {
+    font-size: 21px;
   }
-  .intro .intro_internal header .heading {
-    font-size: 80px;
-  }
-  .intro .intro_internal header .description {
-    font-size: 18px;
-  }
-  .skills .skills_internal ul li {
-    margin: 0 30px 20px 0;
-    font-size: 22px;
-  }
-  .portfolio .portfolio_internal .item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 80%;
-            flex: 0 1 80%;
-    margin: auto;
-  }
-  .portfolio .portfolio_internal .item .info {
-    font-size: 16px;
-  }
-  .contacts .contacts_internal ul.links li a img {
-    width: 25px;
-    height: 25px;
-    margin: 0 10px 0 0;
-  }
-}
 
-@media only screen and (max-width: 465px) {
-  .intro .intro_internal nav {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  .intro .header {
+    padding: 20px 0 0 0;
   }
-  .intro .intro_internal nav ul {
-    display: none;
+  .intro .header p.name,
+.intro .header p.about-button {
+    font-size: 5.45vw;
   }
-  .intro .intro_internal nav .mobile_nav_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .intro .main-info {
+    margin: 50% 0 20px 0;
   }
-  .intro .intro_internal header {
-    padding: 20% 0;
+  .intro .location h2 {
+    font-size: 7vw;
   }
-  .intro .intro_internal header .heading {
-    font-size: 17vw;
+  .intro .location h2 img {
+    width: 35px;
+    height: 35px;
   }
-  .intro .intro_internal header .description {
-    font-size: 16px;
+
+  .details h3 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
   }
-  .portfolio .portfolio_internal .item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 95%;
-            flex: 0 1 95%;
+  .details .skills-list {
+    margin: 0 0 30px 0;
   }
-  .contacts .contacts_internal ul.links li a span {
-    font-size: 5.5vw;
+  .details .skills-list li {
+    font-size: 27px;
+  }
+  .details .portfolio-list .portfiolio-item .info {
+    margin: 15px 0 0 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .name-of-work {
+    font-size: 28px;
+  }
+  .details .portfolio-list .portfiolio-item .info .description {
+    font-size: 20px;
+    margin: 5px 0 15px 0;
+  }
+  .details .portfolio-list .portfiolio-item .info .technologies {
+    font-size: 20px;
+  }
+  .details .contacts-links .link {
+    margin: 20px 0;
+  }
+  .details .contacts-links .link a {
+    font-size: 5.85vw;
   }
 }
