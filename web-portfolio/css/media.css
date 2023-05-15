@@ -7,11 +7,9 @@
     font-size: 47px;
     margin: 0 45px 8px 0;
   }
-
   .wrapper {
     padding: 0 40px 60px 40px;
   }
-
   .about {
     padding: 45px 40px;
   }
@@ -23,12 +21,11 @@
     font-size: 33px;
     line-height: 1.1;
   }
-
   .intro .header {
     padding: 35px 0 0 0;
   }
   .intro .header p.name,
-.intro .header p.about-button {
+  .intro .header p.about-button {
     font-size: 27px;
   }
   .intro .main-info {
@@ -44,7 +41,6 @@
     width: 40px;
     height: 40px;
   }
-
   .details {
     padding: 35px 0 5% 0;
   }
@@ -93,7 +89,6 @@
   .sidebar-sections {
     display: none;
   }
-
   .details .skills-list {
     width: 80%;
   }
@@ -108,7 +103,6 @@
   .intro .main-info .heading h1 {
     font-size: 15vw;
   }
-
   .about .main-info h3 {
     font-size: 60px;
   }
@@ -116,7 +110,6 @@
     font-size: 27px;
     line-height: 1.1;
   }
-
   .details h3 {
     font-size: 70px;
   }
@@ -154,7 +147,7 @@
     padding: 30px 0 0 0;
   }
   .intro .header p.name,
-.intro .header p.about-button {
+  .intro .header p.about-button {
     font-size: 24px;
   }
   .intro .main-info {
@@ -166,7 +159,6 @@
   .intro .location h2 {
     font-size: 30px;
   }
-
   .about .main-info h3 {
     font-size: 60px;
     margin: 0 0 30px 0;
@@ -175,7 +167,6 @@
     font-size: 27px;
     line-height: 1.1;
   }
-
   .details {
     padding: 30px 0 5% 0;
   }
@@ -232,7 +223,6 @@
   .wrapper {
     padding: 0 20px 60px 20px;
   }
-
   .about {
     padding: 35px 20px;
   }
@@ -246,12 +236,11 @@
   .about .main-info p {
     font-size: 25px;
   }
-
   .intro .header {
     padding: 20px 0 0 0;
   }
   .intro .header p.name,
-.intro .header p.about-button {
+  .intro .header p.about-button {
     font-size: 22px;
   }
   .intro .main-info {
@@ -260,7 +249,6 @@
   .intro .main-info .heading h1 {
     font-size: 15.8vw;
   }
-
   .details {
     padding: 20px 0 5% 0;
   }
@@ -297,7 +285,6 @@
   .wrapper {
     padding: 0 20px 60px 20px;
   }
-
   .about {
     padding: 30px 20px;
   }
@@ -307,12 +294,11 @@
   .about .main-info p {
     font-size: 21px;
   }
-
   .intro .header {
     padding: 20px 0 0 0;
   }
   .intro .header p.name,
-.intro .header p.about-button {
+  .intro .header p.about-button {
     font-size: 5.45vw;
   }
   .intro .main-info {
@@ -325,7 +311,6 @@
     width: 35px;
     height: 35px;
   }
-
   .details h3 {
     font-size: 50px;
     margin: 0 0 20px 0;
